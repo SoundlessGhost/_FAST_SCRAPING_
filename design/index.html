@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en" data-accent="emerald">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fastscraping — Your web scraping team on demand</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark">f</span>
+      <span>Fastscraping</span>
+    </a>
+    <nav class="nav">
+      <div class="nav-dropdown">
+        <a href="solutions.html" class="nav-trigger" >Solutions <span class="caret">▾</span></a>
+        <div class="megamenu">
+          <div class="mm-head">
+            <span class="mm-head-l">Solutions · 6 areas</span>
+            <span class="mm-head-r">Click any card to dive in</span>
+          </div>
+          <div class="mm-grid">
+            <a class="mm-card" href="solutions.html#pricing-intelligence">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">Pricing intelligence</span>
+                <span class="mm-d">Track competitor prices in real time</span>
+              </span>
+              <span class="mm-m">60M+/day</span>
+            </a>
+            <a class="mm-card" href="solutions.html#marketplace-intelligence">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1 11H4L3 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">Marketplace intelligence</span>
+                <span class="mm-d">Product data from any marketplace</span>
+              </span>
+              <span class="mm-m">10M+</span>
+            </a>
+            <a class="mm-card" href="solutions.html#job-market">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">Job market insights</span>
+                <span class="mm-d">50+ boards, hiring &amp; salary trends</span>
+              </span>
+              <span class="mm-m">1.4M/wk</span>
+            </a>
+            <a class="mm-card" href="solutions.html#linkedin-data">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">LinkedIn data platform</span>
+                <span class="mm-d">Profiles &amp; companies — zero ban risk</span>
+              </span>
+              <span class="mm-m">100M/mo</span>
+            </a>
+            <a class="mm-card" href="solutions.html#web-data-apis">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 5 3 12 8 19"/><polyline points="16 5 21 12 16 19"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">Web data APIs</span>
+                <span class="mm-d">Custom REST endpoints, any source</span>
+              </span>
+              <span class="mm-m">200ms</span>
+            </a>
+            <a class="mm-card" href="solutions.html#data-pipelines">
+              <span class="mm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v4a4 4 0 0 0 4 4h6"/><path d="M19 16v-4a4 4 0 0 0-4-4H9"/></svg></span>
+              <span class="mm-body">
+                <span class="mm-h">Data pipelines &amp; ETL</span>
+                <span class="mm-d">Automated delivery, your schedule</span>
+              </span>
+              <span class="mm-m">99%+ SLA</span>
+            </a>
+          </div>
+          <div class="mm-foot">
+            <a href="solutions.html">All solutions overview →</a>
+            <span class="mm-tip">Or email khalid@fastscraping.com</span>
+          </div>
+        </div>
+      </div>
+      <a href="#services" class="active">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="topbar-right">
+      <span class="status-pill">
+        <span class="status-dot"></span>
+        <span>All pipelines healthy</span>
+      </span>
+      <a href="#contact" class="btn btn-primary">
+        Talk to Khalid
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" data-screen-label="01 Hero">
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="chip">v8 · 2026</span>
+        <span>Enterprise-grade data extraction</span>
+      </div>
+      <h1 class="display">
+        We handle your
+        <span class="br"><em>web scraping</em> pipeline.</span>
+      </h1>
+      <p class="hero-sub">
+        Structured data delivered <strong>reliably, at any scale</strong> — bypassing Cloudflare,
+        DataDome and login walls. No proxy headaches. No infrastructure overhead. No babysitting.
+      </p>
+      <div class="hero-bullets">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Bypass Cloudflare &amp; Captchas
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Large-scale on demand
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          No proxy hassles
+        </span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          Free strategy call
+          <span class="arrow">→</span>
+        </a>
+        <a href="#solutions" class="btn btn-ghost">View solutions</a>
+      </div>
+      <div class="hero-meta">
+        <div class="avatar">KM</div>
+        <div>
+          <div style="color: var(--ink); font-weight: 500;">Khalid Mahmud Shawon</div>
+          <div>Founder · Replies in &lt; 24h</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div id="live-console"></div>
+      <div class="pipeline">
+        <span class="node"><span class="badge">SRC</span> Target site</span>
+        <span class="arrow"></span>
+        <span class="node"><span class="badge">FS</span> Fastscraping</span>
+        <span class="arrow"></span>
+        <span class="node"><span class="badge">OUT</span> Your warehouse</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<section class="marquee">
+  <div class="container">
+    <div class="marquee-label">Active pipelines for</div>
+  </div>
+  <div class="marquee-track">
+    <a class="platform-chip">StubHub <span class="tick">ticketing</span></a>
+    <a class="platform-chip">SeatGeek <span class="tick">ticketing</span></a>
+    <a class="platform-chip">Indeed <span class="tick">jobs</span></a>
+    <a class="platform-chip">LinkedIn <span class="tick">b2b</span></a>
+    <a class="platform-chip">ImmoScout24 <span class="tick">real estate</span></a>
+    <a class="platform-chip">Starbucks <span class="tick">restaurant</span></a>
+    <a class="platform-chip">DoorDash <span class="tick">delivery</span></a>
+    <a class="platform-chip">McDonald's <span class="tick">restaurant</span></a>
+    <a class="platform-chip">Amazon <span class="tick">e-com</span></a>
+    <a class="platform-chip">Walmart <span class="tick">e-com</span></a>
+    <a class="platform-chip">Glassdoor <span class="tick">jobs</span></a>
+    <!-- duplicate set for seamless loop -->
+    <a class="platform-chip">StubHub <span class="tick">ticketing</span></a>
+    <a class="platform-chip">SeatGeek <span class="tick">ticketing</span></a>
+    <a class="platform-chip">Indeed <span class="tick">jobs</span></a>
+    <a class="platform-chip">LinkedIn <span class="tick">b2b</span></a>
+    <a class="platform-chip">ImmoScout24 <span class="tick">real estate</span></a>
+    <a class="platform-chip">Starbucks <span class="tick">restaurant</span></a>
+    <a class="platform-chip">DoorDash <span class="tick">delivery</span></a>
+    <a class="platform-chip">McDonald's <span class="tick">restaurant</span></a>
+    <a class="platform-chip">Amazon <span class="tick">e-com</span></a>
+    <a class="platform-chip">Walmart <span class="tick">e-com</span></a>
+    <a class="platform-chip">Glassdoor <span class="tick">jobs</span></a>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="block" id="services" data-screen-label="02 Services">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Our services</span>
+        <h2 class="display" style="margin-top: 18px;">Data extraction, <em>built for scale.</em></h2>
+      </div>
+      <p>
+        From a single tricky scraper to a full enterprise data pipeline. We own the
+        infrastructure, the anti-bot work, and the maintenance — you receive clean,
+        structured data on the schedule you need it.
+      </p>
+    </div>
+
+    <div class="services">
+      <article class="svc">
+        <div class="svc-num">01 · Managed scraping</div>
+        <h3 class="svc-title">End-to-end scrapers, fully owned by us.</h3>
+        <p class="svc-desc">We build, deploy, monitor and maintain the scrapers. You get clean data and never write a line of code.</p>
+        <div class="svc-foot">
+          <div class="svc-tags"><span>build</span><span>deploy</span><span>monitor</span></div>
+          <a href="#">Learn more <span class="arr">→</span></a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc-num">02 · Enterprise crawling</div>
+        <h3 class="svc-title">Crawl entire domains at massive scale.</h3>
+        <p class="svc-desc">Proxy rotation, rate limiting, dedup and storage handled. Perfect for market research and competitive intel.</p>
+        <div class="svc-foot">
+          <div class="svc-tags"><span>full-domain</span><span>dedup</span><span>archive</span></div>
+          <a href="#">Learn more <span class="arr">→</span></a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc-num">03 · Mobile app data</div>
+        <h3 class="svc-title">Reverse-engineered mobile APIs.</h3>
+        <p class="svc-desc">We extract data only available inside iOS and Android apps — by replaying the real protocol, not the web.</p>
+        <div class="svc-foot">
+          <div class="svc-tags"><span>iOS</span><span>Android</span><span>protocol</span></div>
+          <a href="#">Learn more <span class="arr">→</span></a>
+        </div>
+      </article>
+
+      <article class="svc feature">
+        <div class="feature-content">
+          <div>
+            <div class="svc-num">04 · Real-time data APIs</div>
+            <h3 class="svc-title" style="font-size: 44px; max-width: 11ch;">Query any website, on demand.</h3>
+            <p class="svc-desc">Custom REST endpoints built for your specific data needs. Real-time JSON, comprehensive docs, 99.9% uptime SLA. We become the API the source site never gave you.</p>
+            <div class="svc-foot">
+              <div class="svc-tags"><span>REST</span><span>JSON</span><span>SLA 99.9%</span><span>OpenAPI</span></div>
+              <a href="#">See API docs <span class="arr">→</span></a>
+            </div>
+          </div>
+          <div class="visual">
+            <div style="font-family: var(--font-mono); font-size: 11.5px; color: #7b827e; margin-bottom: 10px;">→ GET  api.fastscraping.com/v1/listings</div>
+<pre style="margin:0; font-family: var(--font-mono); font-size: 12px; color: #d5dad7; line-height: 1.6; white-space: pre-wrap;">{
+  "source": "stubhub.com",
+  "fetched_at": "2026-05-23T14:08:42Z",
+  "results": [
+    { "event": "Knicks vs. Celtics",
+      "venue": "MSG · NYC",
+      "price_min_usd": 142,
+      "price_med_usd": 286 },
+    { "event": "Hamilton",
+      "venue": "Richard Rodgers",
+      "price_min_usd": 219,
+      "price_med_usd": 372 }
+  ],
+  "bypassed": ["cloudflare", "px"],
+  "latency_ms": 412
+}</pre>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc wide">
+        <div class="svc-num">05 · Automated pipelines (ETL · DaaS)</div>
+        <h3 class="svc-title">Daily, weekly, monthly. On your schedule.</h3>
+        <p class="svc-desc">Fully automated extract → transform → load pipelines. Delivered to your warehouse, your S3 bucket, your SFTP, your webhook. We handle quality checks and selector drift.</p>
+        <div class="svc-foot">
+          <div class="svc-tags"><span>Snowflake</span><span>BigQuery</span><span>S3</span><span>SFTP</span><span>Webhook</span></div>
+          <a href="#">Learn more <span class="arr">→</span></a>
+        </div>
+      </article>
+
+      <article class="svc wide">
+        <div class="svc-num">06 · LinkedIn data platform</div>
+        <h3 class="svc-title">B2B at the source.</h3>
+        <p class="svc-desc">Profiles, companies, jobs and posts — refreshed continuously. Stealth identities, persistent cookies, aged browser profiles. Not just IP rotation.</p>
+        <div class="svc-foot">
+          <div class="svc-tags"><span>profiles</span><span>companies</span><span>jobs</span><span>refresh: daily</span></div>
+          <a href="#">Learn more <span class="arr">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NUMBERS ===================== -->
+<section class="block" style="padding-top: 0;" data-screen-label="03 Numbers">
+  <div class="container">
+    <div class="numbers-block">
+      <div class="numbers-head">
+        <h2>Numbers that <em style="font-style: italic; color: var(--accent);">speak</em>.</h2>
+        <div class="meta">
+          Live snapshot from active client engagements<br/>
+          updated continuously · last sync: 14:08 UTC
+        </div>
+      </div>
+      <div class="numbers-grid">
+        <div class="num">
+          <div class="v"><span data-num="24" data-decimals="0"></span><em>.3M</em></div>
+          <div class="l">Records delivered daily</div>
+          <div class="s">Ticketing &amp; pricing combined</div>
+        </div>
+        <div class="num">
+          <div class="v"><span data-num="99" data-decimals="0"></span><em>.7%</em></div>
+          <div class="l">Anti-bot bypass success</div>
+          <div class="s">Cloudflare, DataDome, PerimeterX</div>
+        </div>
+        <div class="num">
+          <div class="v"><span data-num="50" data-suffix="+"></span></div>
+          <div class="l">Platforms in production</div>
+          <div class="s">Adding new sources weekly</div>
+        </div>
+        <div class="num">
+          <div class="v"><span data-num="24" data-suffix="+"></span></div>
+          <div class="l">Months avg. client tenure</div>
+          <div class="s">We don't run one-off scripts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIFFERENTIATORS ===================== -->
+<section class="block" style="padding-top: 0;" id="solutions" data-screen-label="04 Why us">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Why Fastscraping</span>
+        <h2 class="display" style="margin-top: 18px;">We're not a proxy provider. <em>We're your team.</em></h2>
+      </div>
+      <p>
+        We're not a tool you have to operate. We're not a scraping marketplace.
+        We're a full data extraction team — with the depth to solve what others can't, the
+        operational maturity to keep things running, and the discretion to do it under your brand.
+      </p>
+    </div>
+
+    <div class="diff-grid">
+      <article class="diff-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Anti-bot bypass experts.</h3>
+        <p>We reliably bypass Cloudflare Turnstile, DataDome ML detection, PerimeterX behavioral and Akamai. Most vendors give up — we solve it.</p>
+        <div class="tags"><span>Cloudflare</span><span>DataDome</span><span>PerimeterX</span><span>Akamai</span></div>
+      </article>
+
+      <article class="diff-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Recurring data pipelines.</h3>
+        <p>Not one-off scripts. We build infrastructure for daily, weekly or monthly data delivery with quality checks and auto-adaptation when sites change.</p>
+        <div class="tags"><span>scheduled</span><span>auto-adapt</span><span>quality</span></div>
+      </article>
+
+      <article class="diff-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Stealth browser identities.</h3>
+        <p>Complete digital identities — unique fingerprints, persistent cookies, aged browser profiles, TLS fingerprint matching. Not just rotating IPs.</p>
+        <div class="tags"><span>canvas &amp; webgl</span><span>tls match</span><span>aged cookies</span></div>
+      </article>
+
+      <article class="diff-card hot">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Silent backend vendor.</h3>
+        <p>We operate invisibly behind your brand. Your clients never know we exist. White-label partnership model. Zero attribution. Total discretion.</p>
+        <div class="tags"><span>white label</span><span>b2b partner</span><span>zero attribution</span></div>
+      </article>
+
+      <article class="diff-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Enterprise security.</h3>
+        <p>GDPR-compliant operations. Secure delivery via API, SFTP or S3. Encrypted pipelines end-to-end. Audit-ready logs. Right to be forgotten honored at source.</p>
+        <div class="tags"><span>GDPR</span><span>encrypted</span><span>audit-ready</span></div>
+      </article>
+
+      <article class="diff-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 4h2a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2V6a2 2 0 0 1 2-2h2"/><path d="M9 8h6"/></svg>
+        </div>
+        <h3>One throat to choke.</h3>
+        <p>One contract, one invoice, one Slack channel. No juggling a proxy vendor + a parser vendor + a captcha vendor + an engineer. We own the whole stack.</p>
+        <div class="tags"><span>1 contract</span><span>1 invoice</span><span>1 team</span></div>
+      </article>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="compare">
+      <div class="cmp-head">
+        <h3>How we compare</h3>
+        <div class="key">
+          <span>vs the alternatives</span>
+          <span style="color: var(--hot); letter-spacing: 0.04em;">— their gap</span>
+        </div>
+      </div>
+
+      <div class="row-c">
+        <div class="vs">vs Grepsr <em>scraping platform</em></div>
+        <div class="note">Limited flexibility for complex scraping workflows.</div>
+        <div class="mark">Rigid</div>
+      </div>
+      <div class="row-c">
+        <div class="vs">vs Zyte <em>scraping API</em></div>
+        <div class="note">API-focused tools still require engineering setup on your side.</div>
+        <div class="mark">DIY</div>
+      </div>
+      <div class="row-c">
+        <div class="vs">vs Apify <em>actor marketplace</em></div>
+        <div class="note">Cookie-based actors get banned at scale. Not for production.</div>
+        <div class="mark">Ban risk</div>
+      </div>
+      <div class="row-c">
+        <div class="vs">vs Bright Data <em>proxy network</em></div>
+        <div class="note">Proxy-only — you still need a scraper, a parser, a team.</div>
+        <div class="mark">Proxy only</div>
+      </div>
+      <div class="row-c">
+        <div class="vs">vs In-house <em>your engineers</em></div>
+        <div class="note">Too expensive, breaks constantly, ties up your roadmap.</div>
+        <div class="mark">Costly</div>
+      </div>
+      <div class="row-c">
+        <div class="vs">vs Freelancers <em>upwork &amp; co.</em></div>
+        <div class="note">No scale, no reliability, no incident response at 3 a.m.</div>
+        <div class="mark">No SLA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BYPASS / ANTI-BOT ===================== -->
+<section class="block" style="padding-top: 0;" id="bypass" data-screen-label="05 Anti-bot">
+  <div class="container">
+    <div class="bypass">
+      <div class="bypass-inner">
+        <div>
+          <span class="eyebrow hot" style="color: rgba(255,255,255,0.6);">Anti-bot expertise</span>
+          <h2 style="margin-top: 18px;">Bypass — <em>every layer.</em></h2>
+          <p>
+            We don't ship around hard sites. We unpack each defense layer — challenge JS,
+            TLS fingerprint, canvas/WebGL noise, behavioral analytics — and emulate a legitimate
+            browser end-to-end. The result: stable extraction, week after week, even on the hardest targets.
+          </p>
+          <div class="bypass-list">
+            <div class="item">
+              <span class="badge">solved</span>
+              <span class="name">Cloudflare Turnstile</span>
+              <span class="pct">99.8%</span>
+            </div>
+            <div class="item">
+              <span class="badge">solved</span>
+              <span class="name">DataDome (ML)</span>
+              <span class="pct">99.4%</span>
+            </div>
+            <div class="item">
+              <span class="badge">solved</span>
+              <span class="name">PerimeterX behavioral</span>
+              <span class="pct">99.6%</span>
+            </div>
+            <div class="item">
+              <span class="badge">solved</span>
+              <span class="name">Akamai Bot Manager</span>
+              <span class="pct">99.1%</span>
+            </div>
+            <div class="item">
+              <span class="badge">solved</span>
+              <span class="name">Login walls &amp; auth gates</span>
+              <span class="pct">handled</span>
+            </div>
+          </div>
+        </div>
+        <div class="bypass-visual">
+          <div id="bypass-visual" style="width:100%; height:100%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="block" style="padding-top: 0;" id="clients" data-screen-label="06 Clients">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Trusted by</span>
+        <h2 class="display" style="margin-top: 18px;">Real partnerships. <em>Real outcomes.</em></h2>
+      </div>
+      <p>
+        Quotes from active production engagements — clients we ship data to every week.
+        Average tenure is over two years; some have been with us since 2022.
+      </p>
+    </div>
+
+    <div class="testimonials">
+      <article class="testimonial big">
+        <div class="quote-mark">"</div>
+        <p class="quote">Most likely no one is able to do it except you. We will see :-)</p>
+        <div class="who">
+          <div class="av">AM</div>
+          <div>
+            <div class="name">Adrian Mayer</div>
+            <div class="role">Founder, TheDataHive</div>
+          </div>
+        </div>
+        <div class="project">Project · Switzerland real-estate APIs</div>
+      </article>
+
+      <article class="testimonial small">
+        <div class="quote-mark">"</div>
+        <p class="quote">I'm satisfied with the results for today, so you can add a $400 setup fee to the next invoice. Thank you for your hard work.</p>
+        <div class="who">
+          <div class="av">SV</div>
+          <div>
+            <div class="name">Scott Vahey</div>
+            <div class="role">Owner, Ficstar</div>
+          </div>
+        </div>
+        <div class="project">Project · StubHub pipeline</div>
+      </article>
+
+      <article class="testimonial small">
+        <div class="quote-mark">"</div>
+        <p class="quote">You're doing a great job with the Indeed US numbers over the last couple months. Thank you for your efforts — much appreciated!</p>
+        <div class="who">
+          <div class="av">SV</div>
+          <div>
+            <div class="name">Scott Vahey</div>
+            <div class="role">Owner, Ficstar</div>
+          </div>
+        </div>
+        <div class="project">Project · Indeed US pipeline</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="block" style="padding-top: 0;" id="contact" data-screen-label="07 CTA">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <span class="eyebrow">Get started</span>
+        <h2 style="margin-top: 18px;">Ready to scale your <em>data pipeline?</em></h2>
+        <p>
+          Tell us your target platforms and volume. We'll send you a free sample within 48–72 hours,
+          and we'll match or beat your current vendor's pricing — with better quality and coverage.
+        </p>
+        <div class="hero-bullets" style="margin-top: 28px;">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>48–72h sample</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Free consultation</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No commitment</span>
+        </div>
+      </div>
+
+      <div class="cta-card">
+        <div class="label">Direct line</div>
+        <div class="person">
+          <div class="av">KM</div>
+          <div>
+            <div class="n">Md Khalid Mahmud Shawon</div>
+            <div class="r">Founder · The anti-bot expert</div>
+          </div>
+        </div>
+        <div class="meta-row"><span class="k">Email</span><span class="v" style="font-family: var(--font-mono); font-size: 12.5px;">khalid@fastscraping.com</span></div>
+        <div class="meta-row"><span class="k">Response time</span><span class="v">&lt; 24 hours</span></div>
+        <div class="meta-row"><span class="k">First call</span><span class="v">30 min · no slides</span></div>
+        <div class="meta-row"><span class="k">Sample data</span><span class="v">Within 48–72 hours</span></div>
+        <div class="actions">
+          <a href="#" class="btn btn-accent">Book a call</a>
+          <a href="#" class="btn btn-ghost">Send brief</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark">f</span>
+          <span>Fastscraping</span>
+        </a>
+        <p>Your web scraping team on demand. Structured data at scale — no Cloudflare, no captchas, no hassles.</p>
+        <a href="mailto:khalid@fastscraping.com" class="email">khalid@fastscraping.com</a>
+        <div class="social-links">
+          <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/md-khalid-mahmud-shawon" class="linkedin" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+          </a>
+          <a href="https://upwork.com/freelancers/khalidalsaba" class="upwork" aria-label="Upwork" title="Upwork">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Pricing intelligence</a></li>
+          <li><a href="#">Marketplace intelligence</a></li>
+          <li><a href="#">Job market insights</a></li>
+          <li><a href="#">LinkedIn data platform</a></li>
+          <li><a href="#">Web data APIs</a></li>
+          <li><a href="#">Data pipelines &amp; ETL</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#">E-commerce &amp; retail</a></li>
+          <li><a href="#">Real estate</a></li>
+          <li><a href="#">Talent &amp; recruitment</a></li>
+          <li><a href="#">Ticketing &amp; events</a></li>
+          <li><a href="#">Food delivery</a></li>
+          <li><a href="#">AI &amp; machine learning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Case studies</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div>© 2026 Fastscraping · All rights reserved</div>
+      <div>Built for data teams · Operated from Dhaka &amp; the cloud</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Tweaks mount -->
+<div id="tweaks-root"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+</body>
+</html>
