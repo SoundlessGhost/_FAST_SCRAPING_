@@ -77,7 +77,7 @@ export default function Header() {
                   </span>
                   <span className="mm-body">
                     <span className="mm-h">Marketplace intelligence</span>
-                    <span className="mm-d">Product data from any marketplace</span>
+                    <span className="mm-d">Product data from any <br /> marketplace</span>
                   </span>
                   <span className="mm-m">10M+</span>
                 </Link>
@@ -91,7 +91,7 @@ export default function Header() {
                   </span>
                   <span className="mm-body">
                     <span className="mm-h">Job market insights</span>
-                    <span className="mm-d">50+ boards, hiring &amp; salary trends</span>
+                    <span className="mm-d">50+ boards, hiring &amp; salary <br /> trends</span>
                   </span>
                   <span className="mm-m">1.4M/wk</span>
                 </Link>
@@ -116,7 +116,7 @@ export default function Header() {
                   </span>
                   <span className="mm-body">
                     <span className="mm-h">Web data APIs</span>
-                    <span className="mm-d">Custom REST endpoints, any source</span>
+                    <span className="mm-d">Custom REST endpoints, any <br /> source</span>
                   </span>
                   <span className="mm-m">200ms</span>
                 </Link>

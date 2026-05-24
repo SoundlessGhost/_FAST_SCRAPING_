@@ -23,3 +23,12 @@ html {
 .mm-d {
   display: block;
 }
+
+/* Vertically center icon, body and metric inside each megamenu card.
+   Override `.mm-m { align-self: start }` from base.css so metric also centers. */
+.mm-card {
+  align-items: center;
+}
+.mm-card .mm-m {
+  align-self: center;
+}
