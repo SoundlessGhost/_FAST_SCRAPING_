@@ -92,7 +92,7 @@ export default function BypassVisual() {
         const x = 240 + r * Math.cos(rad);
         const y = 230 + r * Math.sin(rad);
         return (
-          <g key={s.name} style={{ transformOrigin: `${x}px ${y}px` }}>
+          <g key={s.name}>
             <line
               x1="240"
               y1="230"
