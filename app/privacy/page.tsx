@@ -77,7 +77,7 @@ export default function PrivacyPage() {
               <li>
                 For any privacy question, email{" "}
                 <a
-                  href="mailto:khalid@fastscraping.com"
+                  href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer"
                   style={{ color: "var(--accent)" }}
                 >
                   khalid@fastscraping.com
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
               </ol>
               <div className="toc-foot">
                 <span>Have a question?</span>
-                <a href="mailto:khalid@fastscraping.com">khalid@fastscraping.com</a>
+                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
               </div>
             </nav>
 
@@ -363,7 +363,7 @@ export default function PrivacyPage() {
                 </ol>
                 <p>
                   To exercise any of these rights, email{" "}
-                  <a href="mailto:khalid@fastscraping.com">khalid@fastscraping.com</a>. We
+                  <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>. We
                   respond within 30 days, and usually much sooner.
                 </p>
               </section>
@@ -390,7 +390,7 @@ export default function PrivacyPage() {
                 </ul>
                 <p>
                   No system is perfectly secure. If you discover a vulnerability, email{" "}
-                  <a href="mailto:khalid@fastscraping.com">khalid@fastscraping.com</a> and
+                  <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a> and
                   we&apos;ll respond within 24 hours.
                 </p>
               </section>
@@ -444,7 +444,7 @@ export default function PrivacyPage() {
                 <dl>
                   <dt>Email</dt>
                   <dd>
-                    <a href="mailto:khalid@fastscraping.com">khalid@fastscraping.com</a> —
+                    <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a> —
                     replies within 24 hours
                   </dd>
                   <dt>WhatsApp</dt>
@@ -479,7 +479,7 @@ export default function PrivacyPage() {
                   <Link href="/contact" className="btn btn-primary">
                     Send us a note <span className="arrow">→</span>
                   </Link>
-                  <a href="mailto:khalid@fastscraping.com" className="btn btn-ghost">
+                  <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                     Email directly
                   </a>
                 </div>

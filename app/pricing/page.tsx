@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PriceConfigurator from "@/components/PriceConfigurator";
 import Faq from "@/components/Faq";
+import KMAvatar from "@/components/KMAvatar";
 import "../styles/about.css";
 import "../styles/pricing.css";
 
@@ -140,7 +141,7 @@ export default function PricingPage() {
                   <Link href="#contact" className="btn btn-accent">
                     Get a custom quote <span className="arrow">→</span>
                   </Link>
-                  <a href="mailto:khalid@fastscraping.com" className="btn btn-ghost">
+                  <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                     Email Khalid
                   </a>
                 </div>
@@ -163,7 +164,7 @@ export default function PricingPage() {
                   and tell you up front.
                 </p>
                 <div className="oa-sig">
-                  <div className="avatar">KM</div>
+                  <KMAvatar variant="small" />
                   <div>
                     <div className="oa-name">Khalid · Founder</div>
                     <div className="oa-role">Replies personally · &lt;24h</div>
@@ -467,7 +468,7 @@ export default function PricingPage() {
             <div className="cta-card">
               <div className="label">Direct line</div>
               <div className="person">
-                <div className="av">KM</div>
+                <KMAvatar variant="large" />
                 <div>
                   <div className="n">Md Khalid Mahmud Shawon</div>
                   <div className="r">Founder · Quotes within 24 hours</div>
@@ -492,10 +493,10 @@ export default function PricingPage() {
                 <span className="v">Within 48–72 hours</span>
               </div>
               <div className="actions">
-                <a href="#" className="btn btn-accent">
+                <a href="/contact" className="btn btn-accent">
                   Book a demo
                 </a>
-                <a href="mailto:khalid@fastscraping.com" className="btn btn-ghost">
+                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Email directly
                 </a>
               </div>

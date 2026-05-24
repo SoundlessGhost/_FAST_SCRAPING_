@@ -2,6 +2,7 @@ import Link from "next/link";
 import LiveConsole from "@/components/LiveConsole";
 import BypassVisual from "@/components/BypassVisual";
 import AnimatedNumber from "@/components/AnimatedNumber";
+import KMAvatar from "@/components/KMAvatar";
 
 export default function HomePage() {
   return (
@@ -21,25 +22,46 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="hero-sub">
-              Structured data delivered <strong>reliably, at any scale</strong> — bypassing
-              Cloudflare, DataDome and login walls. No proxy headaches. No infrastructure
-              overhead. No babysitting.
+              Structured data delivered <strong>reliably, at any scale</strong>{" "}
+              — bypassing Cloudflare, DataDome and login walls. No proxy
+              headaches. No infrastructure overhead. No babysitting.
             </p>
             <div className="hero-bullets">
               <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 Bypass Cloudflare &amp; Captchas
               </span>
               <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 Large-scale on demand
               </span>
               <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 No proxy hassles
@@ -55,7 +77,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="hero-meta">
-              <div className="avatar">KM</div>
+              <KMAvatar variant="small" />
               <div>
                 <div style={{ color: "var(--ink)", fontWeight: 500 }}>
                   Khalid Mahmud Shawon
@@ -132,19 +154,21 @@ export default function HomePage() {
               </h2>
             </div>
             <p>
-              From a single tricky scraper to a full enterprise data pipeline. We own the
-              infrastructure, the anti-bot work, and the maintenance — you receive clean,
-              structured data on the schedule you need it.
+              From a single tricky scraper to a full enterprise data pipeline.
+              We own the infrastructure, the anti-bot work, and the maintenance
+              — you receive clean, structured data on the schedule you need it.
             </p>
           </div>
 
           <div className="services">
             <article className="svc">
               <div className="svc-num">01 · Managed scraping</div>
-              <h3 className="svc-title">End-to-end scrapers, fully owned by us.</h3>
+              <h3 className="svc-title">
+                End-to-end scrapers, fully owned by us.
+              </h3>
               <p className="svc-desc">
-                We build, deploy, monitor and maintain the scrapers. You get clean data and never
-                write a line of code.
+                We build, deploy, monitor and maintain the scrapers. You get
+                clean data and never write a line of code.
               </p>
               <div className="svc-foot">
                 <div className="svc-tags">
@@ -160,10 +184,12 @@ export default function HomePage() {
 
             <article className="svc">
               <div className="svc-num">02 · Enterprise crawling</div>
-              <h3 className="svc-title">Crawl entire domains at massive scale.</h3>
+              <h3 className="svc-title">
+                Crawl entire domains at massive scale.
+              </h3>
               <p className="svc-desc">
-                Proxy rotation, rate limiting, dedup and storage handled. Perfect for market
-                research and competitive intel.
+                Proxy rotation, rate limiting, dedup and storage handled.
+                Perfect for market research and competitive intel.
               </p>
               <div className="svc-foot">
                 <div className="svc-tags">
@@ -181,8 +207,8 @@ export default function HomePage() {
               <div className="svc-num">03 · Mobile app data</div>
               <h3 className="svc-title">Reverse-engineered mobile APIs.</h3>
               <p className="svc-desc">
-                We extract data only available inside iOS and Android apps — by replaying the
-                real protocol, not the web.
+                We extract data only available inside iOS and Android apps — by
+                replaying the real protocol, not the web.
               </p>
               <div className="svc-foot">
                 <div className="svc-tags">
@@ -207,9 +233,9 @@ export default function HomePage() {
                     Query any website, on demand.
                   </h3>
                   <p className="svc-desc">
-                    Custom REST endpoints built for your specific data needs. Real-time JSON,
-                    comprehensive docs, 99.9% uptime SLA. We become the API the source site never
-                    gave you.
+                    Custom REST endpoints built for your specific data needs.
+                    Real-time JSON, comprehensive docs, 99.9% uptime SLA. We
+                    become the API the source site never gave you.
                   </p>
                   <div className="svc-foot">
                     <div className="svc-tags">
@@ -264,12 +290,16 @@ export default function HomePage() {
             </article>
 
             <article className="svc wide">
-              <div className="svc-num">05 · Automated pipelines (ETL · DaaS)</div>
-              <h3 className="svc-title">Daily, weekly, monthly. On your schedule.</h3>
+              <div className="svc-num">
+                05 · Automated pipelines (ETL · DaaS)
+              </div>
+              <h3 className="svc-title">
+                Daily, weekly, monthly. On your schedule.
+              </h3>
               <p className="svc-desc">
-                Fully automated extract → transform → load pipelines. Delivered to your
-                warehouse, your S3 bucket, your SFTP, your webhook. We handle quality checks and
-                selector drift.
+                Fully automated extract → transform → load pipelines. Delivered
+                to your warehouse, your S3 bucket, your SFTP, your webhook. We
+                handle quality checks and selector drift.
               </p>
               <div className="svc-foot">
                 <div className="svc-tags">
@@ -289,8 +319,9 @@ export default function HomePage() {
               <div className="svc-num">06 · LinkedIn data platform</div>
               <h3 className="svc-title">B2B at the source.</h3>
               <p className="svc-desc">
-                Profiles, companies, jobs and posts — refreshed continuously. Stealth identities,
-                persistent cookies, aged browser profiles. Not just IP rotation.
+                Profiles, companies, jobs and posts — refreshed continuously.
+                Stealth identities, persistent cookies, aged browser profiles.
+                Not just IP rotation.
               </p>
               <div className="svc-foot">
                 <div className="svc-tags">
@@ -319,7 +350,10 @@ export default function HomePage() {
             <div className="numbers-head">
               <h2>
                 Numbers that{" "}
-                <em style={{ fontStyle: "italic", color: "var(--accent)" }}>speak</em>.
+                <em style={{ fontStyle: "italic", color: "var(--accent)" }}>
+                  speak
+                </em>
+                .
               </h2>
               <div className="meta">
                 Live snapshot from active client engagements
@@ -379,25 +413,32 @@ export default function HomePage() {
               </h2>
             </div>
             <p>
-              We&apos;re not a tool you have to operate. We&apos;re not a scraping marketplace.
-              We&apos;re a full data extraction team — with the depth to solve what others
-              can&apos;t, the operational maturity to keep things running, and the discretion to
-              do it under your brand.
+              We&apos;re not a tool you have to operate. We&apos;re not a
+              scraping marketplace. We&apos;re a full data extraction team —
+              with the depth to solve what others can&apos;t, the operational
+              maturity to keep things running, and the discretion to do it under
+              your brand.
             </p>
           </div>
 
           <div className="diff-grid">
             <article className="diff-card">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-4Z" />
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               </div>
               <h3>Anti-bot bypass experts.</h3>
               <p>
-                We reliably bypass Cloudflare Turnstile, DataDome ML detection, PerimeterX
-                behavioral and Akamai. Most vendors give up — we solve it.
+                We reliably bypass Cloudflare Turnstile, DataDome ML detection,
+                PerimeterX behavioral and Akamai. Most vendors give up — we
+                solve it.
               </p>
               <div className="tags">
                 <span>Cloudflare</span>
@@ -409,15 +450,21 @@ export default function HomePage() {
 
             <article className="diff-card">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 6v6l4 2" />
                 </svg>
               </div>
               <h3>Recurring data pipelines.</h3>
               <p>
-                Not one-off scripts. We build infrastructure for daily, weekly or monthly data
-                delivery with quality checks and auto-adaptation when sites change.
+                Not one-off scripts. We build infrastructure for daily, weekly
+                or monthly data delivery with quality checks and auto-adaptation
+                when sites change.
               </p>
               <div className="tags">
                 <span>scheduled</span>
@@ -428,15 +475,21 @@ export default function HomePage() {
 
             <article className="diff-card">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8S2 12 2 12Z" />
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
               <h3>Stealth browser identities.</h3>
               <p>
-                Complete digital identities — unique fingerprints, persistent cookies, aged
-                browser profiles, TLS fingerprint matching. Not just rotating IPs.
+                Complete digital identities — unique fingerprints, persistent
+                cookies, aged browser profiles, TLS fingerprint matching. Not
+                just rotating IPs.
               </p>
               <div className="tags">
                 <span>canvas &amp; webgl</span>
@@ -447,15 +500,21 @@ export default function HomePage() {
 
             <article className="diff-card hot">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <rect x="3" y="3" width="18" height="18" rx="2" />
                   <path d="M3 9h18M9 21V9" />
                 </svg>
               </div>
               <h3>Silent backend vendor.</h3>
               <p>
-                We operate invisibly behind your brand. Your clients never know we exist.
-                White-label partnership model. Zero attribution. Total discretion.
+                We operate invisibly behind your brand. Your clients never know
+                we exist. White-label partnership model. Zero attribution. Total
+                discretion.
               </p>
               <div className="tags">
                 <span>white label</span>
@@ -466,15 +525,21 @@ export default function HomePage() {
 
             <article className="diff-card">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <rect x="3" y="11" width="18" height="11" rx="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
               </div>
               <h3>Enterprise security.</h3>
               <p>
-                GDPR-compliant operations. Secure delivery via API, SFTP or S3. Encrypted
-                pipelines end-to-end. Audit-ready logs. Right to be forgotten honored at source.
+                GDPR-compliant operations. Secure delivery via API, SFTP or S3.
+                Encrypted pipelines end-to-end. Audit-ready logs. Right to be
+                forgotten honored at source.
               </p>
               <div className="tags">
                 <span>GDPR</span>
@@ -485,15 +550,21 @@ export default function HomePage() {
 
             <article className="diff-card">
               <div className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
                   <path d="M16 4h2a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2V6a2 2 0 0 1 2-2h2" />
                   <path d="M9 8h6" />
                 </svg>
               </div>
               <h3>One throat to choke.</h3>
               <p>
-                One contract, one invoice, one Slack channel. No juggling a proxy vendor + a
-                parser vendor + a captcha vendor + an engineer. We own the whole stack.
+                One contract, one invoice, one Slack channel. No juggling a
+                proxy vendor + a parser vendor + a captcha vendor + an engineer.
+                We own the whole stack.
               </p>
               <div className="tags">
                 <span>1 contract</span>
@@ -583,16 +654,20 @@ export default function HomePage() {
           <div className="bypass">
             <div className="bypass-inner">
               <div>
-                <span className="eyebrow hot" style={{ color: "rgba(255,255,255,0.6)" }}>
+                <span
+                  className="eyebrow hot"
+                  style={{ color: "rgba(255,255,255,0.6)" }}
+                >
                   Anti-bot expertise
                 </span>
                 <h2 style={{ marginTop: 18 }}>
                   Bypass — <em>every layer.</em>
                 </h2>
                 <p>
-                  We don&apos;t ship around hard sites. We unpack each defense layer — challenge
-                  JS, TLS fingerprint, canvas/WebGL noise, behavioral analytics — and emulate a
-                  legitimate browser end-to-end. The result: stable extraction, week after week,
+                  We don&apos;t ship around hard sites. We unpack each defense
+                  layer — challenge JS, TLS fingerprint, canvas/WebGL noise,
+                  behavioral analytics — and emulate a legitimate browser
+                  end-to-end. The result: stable extraction, week after week,
                   even on the hardest targets.
                 </p>
                 <div className="bypass-list">
@@ -649,8 +724,9 @@ export default function HomePage() {
               </h2>
             </div>
             <p>
-              Quotes from active production engagements — clients we ship data to every week.
-              Average tenure is over two years; some have been with us since 2022.
+              Quotes from active production engagements — clients we ship data
+              to every week. Average tenure is over two years; some have been
+              with us since 2022.
             </p>
           </div>
 
@@ -667,14 +743,17 @@ export default function HomePage() {
                   <div className="role">Founder, TheDataHive</div>
                 </div>
               </div>
-              <div className="project">Project · Switzerland real-estate APIs</div>
+              <div className="project">
+                Project · Switzerland real-estate APIs
+              </div>
             </article>
 
             <article className="testimonial small">
               <div className="quote-mark">&quot;</div>
               <p className="quote">
-                I&apos;m satisfied with the results for today, so you can add a $400 setup fee to
-                the next invoice. Thank you for your hard work.
+                I&apos;m satisfied with the results for today, so you can add a
+                $400 setup fee to the next invoice. Thank you for your hard
+                work.
               </p>
               <div className="who">
                 <div className="av">SV</div>
@@ -689,8 +768,9 @@ export default function HomePage() {
             <article className="testimonial small">
               <div className="quote-mark">&quot;</div>
               <p className="quote">
-                You&apos;re doing a great job with the Indeed US numbers over the last couple
-                months. Thank you for your efforts — much appreciated!
+                You&apos;re doing a great job with the Indeed US numbers over
+                the last couple months. Thank you for your efforts — much
+                appreciated!
               </p>
               <div className="who">
                 <div className="av">SV</div>
@@ -720,25 +800,47 @@ export default function HomePage() {
                 Ready to scale your <em>data pipeline?</em>
               </h2>
               <p>
-                Tell us your target platforms and volume. We&apos;ll send you a free sample
-                within 48–72 hours, and we&apos;ll match or beat your current vendor&apos;s
-                pricing — with better quality and coverage.
+                Tell us your target platforms and volume. We&apos;ll send you a
+                free sample within 48–72 hours, and we&apos;ll match or beat
+                your current vendor&apos;s pricing — with better quality and
+                coverage.
               </p>
               <div className="hero-bullets" style={{ marginTop: 28 }}>
                 <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   48–72h sample
                 </span>
                 <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   Free consultation
                 </span>
                 <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   No commitment
@@ -749,7 +851,7 @@ export default function HomePage() {
             <div className="cta-card">
               <div className="label">Direct line</div>
               <div className="person">
-                <div className="av">KM</div>
+                <KMAvatar variant="large" />
                 <div>
                   <div className="n">Md Khalid Mahmud Shawon</div>
                   <div className="r">Founder · The anti-bot expert</div>
@@ -777,10 +879,10 @@ export default function HomePage() {
                 <span className="v">Within 48–72 hours</span>
               </div>
               <div className="actions">
-                <a href="#" className="btn btn-accent">
+                <a href="/contact" className="btn btn-accent">
                   Book a call
                 </a>
-                <a href="#" className="btn btn-ghost">
+                <a href="/contact#letter" className="btn btn-ghost">
                   Send brief
                 </a>
               </div>

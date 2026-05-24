@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SolutionsStack from "@/components/SolutionsStack";
+import KMAvatar from "@/components/KMAvatar";
 import "../styles/about.css";
 import "../styles/sol.css";
 import "../styles/sol-stack.css";
@@ -139,7 +140,7 @@ export default function SolutionsPage() {
                 <Link href="#contact" className="btn btn-accent">
                   Book a free consultation <span className="arrow">→</span>
                 </Link>
-                <a href="mailto:khalid@fastscraping.com" className="btn btn-ghost">
+                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Email Khalid
                 </a>
               </div>
@@ -221,7 +222,7 @@ export default function SolutionsPage() {
             <div className="cta-card">
               <div className="label">Direct line</div>
               <div className="person">
-                <div className="av">KM</div>
+                <KMAvatar variant="large" />
                 <div>
                   <div className="n">Md Khalid Mahmud Shawon</div>
                   <div className="r">Founder · Replies personally</div>
@@ -246,8 +247,8 @@ export default function SolutionsPage() {
                 <span className="v">Within 48–72 hours</span>
               </div>
               <div className="actions">
-                <a href="#" className="btn btn-accent">Book a demo</a>
-                <a href="mailto:khalid@fastscraping.com" className="btn btn-ghost">
+                <a href="/contact" className="btn btn-accent">Book a demo</a>
+                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Email directly
                 </a>
               </div>

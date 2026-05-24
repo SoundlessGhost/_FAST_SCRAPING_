@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import AnimatedNumber from "@/components/AnimatedNumber";
+import KMAvatar from "@/components/KMAvatar";
 import "../styles/about.css";
 
 import type { Metadata } from "next";
@@ -149,37 +151,14 @@ export default function AboutPage() {
 
           <article className="founder">
             <div className="founder-portrait">
-              <svg viewBox="0 0 400 480" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-                <defs>
-                  <pattern id="dots" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
-                    <circle cx="3" cy="3" r="0.8" fill="rgba(255,255,255,0.18)" />
-                  </pattern>
-                  <linearGradient id="fg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#0a3d2d" />
-                    <stop offset="100%" stopColor="#0e1311" />
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="480" fill="url(#fg)" />
-                <rect width="400" height="480" fill="url(#dots)" />
-                <g transform="translate(200, 295)">
-                  <circle cx="0" cy="-95" r="62" fill="#1a4538" opacity="0.92" />
-                  <path
-                    d="M -100 130 Q -100 30 0 30 Q 100 30 100 130 L 100 200 L -100 200 Z"
-                    fill="#1a4538"
-                    opacity="0.92"
-                  />
-                  <circle cx="0" cy="-95" r="62" fill="none" stroke="rgba(122,209,154,0.4)" strokeWidth="0.5" />
-                </g>
-                <text x="24" y="36" fontFamily="Geist Mono" fontSize="10" letterSpacing="0.16em" fill="rgba(245,243,238,0.6)">
-                  PORTRAIT · 01
-                </text>
-                <text x="376" y="36" textAnchor="end" fontFamily="Geist Mono" fontSize="10" letterSpacing="0.16em" fill="rgba(245,243,238,0.6)">
-                  SIRAJGANJ, BD
-                </text>
-                <text x="24" y="460" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.16em" fill="rgba(245,243,238,0.4)">
-                  FASTSCRAPING / FOUNDER
-                </text>
-              </svg>
+              <Image
+                src="/team/shawon.jpg"
+                alt="Md Khalid Mahmud Shawon — Founder & CEO"
+                fill
+                sizes="(min-width: 960px) 40vw, 100vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
 
             <div className="founder-body">
@@ -217,22 +196,22 @@ export default function AboutPage() {
                 <li>
                   <span className="fl-k">Reach</span>
                   <span className="fl-v">
-                    <a href="mailto:khalid@fastscraping.com">khalid@fastscraping.com</a>
+                    <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
                   </span>
                 </li>
               </ul>
 
               <div className="founder-links">
-                <a href="https://linkedin.com/in/md-khalid-mahmud-shawon" className="btn btn-ghost">
+                <a href="https://linkedin.com/in/md-khalid-mahmud-shawon" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
                   </svg>
                   LinkedIn
                 </a>
-                <a href="https://upwork.com/freelancers/khalidalsaba" className="btn btn-ghost">
+                <a href="https://upwork.com/freelancers/khalidalsaba" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Upwork profile
                 </a>
-                <a href="mailto:khalid@fastscraping.com" className="btn btn-primary">
+                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Contact Khalid
                   <span className="arrow">→</span>
                 </a>
@@ -243,29 +222,13 @@ export default function AboutPage() {
           <div className="team-row">
             <article className="member">
               <div className="member-portrait">
-                <svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-                  <defs>
-                    <pattern id="lines2" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                      <line x1="0" y1="0" x2="0" y2="8" stroke="rgba(14,93,68,0.12)" strokeWidth="1" />
-                    </pattern>
-                  </defs>
-                  <rect width="300" height="360" fill="#e6efe9" />
-                  <rect width="300" height="360" fill="url(#lines2)" />
-                  <g transform="translate(150, 230)">
-                    <circle cx="0" cy="-70" r="46" fill="#0e5d44" opacity="0.92" />
-                    <path
-                      d="M -78 100 Q -78 20 0 20 Q 78 20 78 100 L 78 160 L -78 160 Z"
-                      fill="#0e5d44"
-                      opacity="0.92"
-                    />
-                  </g>
-                  <text x="18" y="28" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.16em" fill="#0e5d44">
-                    PORTRAIT · 02
-                  </text>
-                  <text x="282" y="28" textAnchor="end" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.16em" fill="#0e5d44">
-                    CTO
-                  </text>
-                </svg>
+                <Image
+                  src="/team/kashru.png"
+                  alt="Kashru Bin Hadi Sumon — CTO"
+                  fill
+                  sizes="(min-width: 960px) 25vw, 100vw"
+                  style={{ objectFit: "cover" }}
+                />
               </div>
               <div className="member-body">
                 <div className="member-role">CTO</div>
@@ -285,29 +248,13 @@ export default function AboutPage() {
 
             <article className="member">
               <div className="member-portrait member-portrait--alt">
-                <svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-                  <defs>
-                    <pattern id="grid3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(214,87,48,0.15)" strokeWidth="0.6" />
-                    </pattern>
-                  </defs>
-                  <rect width="300" height="360" fill="#f7e6dd" />
-                  <rect width="300" height="360" fill="url(#grid3)" />
-                  <g transform="translate(150, 230)">
-                    <circle cx="0" cy="-70" r="46" fill="#c14a25" opacity="0.92" />
-                    <path
-                      d="M -78 100 Q -78 20 0 20 Q 78 20 78 100 L 78 160 L -78 160 Z"
-                      fill="#c14a25"
-                      opacity="0.92"
-                    />
-                  </g>
-                  <text x="18" y="28" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.16em" fill="#8c3415">
-                    PORTRAIT · 03
-                  </text>
-                  <text x="282" y="28" textAnchor="end" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.16em" fill="#8c3415">
-                    ANTI-BOT
-                  </text>
-                </svg>
+                <Image
+                  src="/team/rejwan.png"
+                  alt="MD Rejwan Habib — Head of Anti-Bot Research"
+                  fill
+                  sizes="(min-width: 960px) 25vw, 100vw"
+                  style={{ objectFit: "cover" }}
+                />
               </div>
               <div className="member-body">
                 <div className="member-role">Head of Anti-Bot Research</div>
@@ -329,7 +276,7 @@ export default function AboutPage() {
           <p className="team-foot">
             We work in small teams of high-leverage engineers — never armies of operators. Open
             seats:{" "}
-            <a href="mailto:khalid@fastscraping.com">
+            <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">
               we&apos;re hiring senior scraping engineers
             </a>
             .
@@ -561,7 +508,7 @@ export default function AboutPage() {
                   <span className="brand-mark">f</span>
                   <span>Fastscraping</span>
                 </div>
-                <a href="https://fastscraping.com" className="bc-url">
+                <a href="https://fastscraping.com" target="_blank" rel="noopener noreferrer" className="bc-url">
                   fastscraping.com →
                 </a>
               </div>
@@ -599,7 +546,7 @@ export default function AboutPage() {
                   </span>
                   <span>Scrayz</span>
                 </div>
-                <a href="https://scrayz.com" className="bc-url">
+                <a href="https://scrayz.com" target="_blank" rel="noopener noreferrer" className="bc-url">
                   scrayz.com →
                 </a>
               </div>
@@ -620,7 +567,7 @@ export default function AboutPage() {
               </ul>
               <div className="bc-foot">
                 <span className="bc-tag">Self-serve · API · Pay-as-you-go</span>
-                <a href="https://scrayz.com" className="btn btn-ghost">
+                <a href="https://scrayz.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Explore Scrayz <span className="arrow">→</span>
                 </a>
               </div>
@@ -673,7 +620,7 @@ export default function AboutPage() {
             <div className="cta-card">
               <div className="label">Direct line</div>
               <div className="person">
-                <div className="av">KM</div>
+                <KMAvatar variant="large" />
                 <div>
                   <div className="n">Md Khalid Mahmud Shawon</div>
                   <div className="r">Founder · The anti-bot expert</div>

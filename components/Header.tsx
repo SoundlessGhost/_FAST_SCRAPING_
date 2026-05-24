@@ -8,11 +8,11 @@ type PageMeta = { cta: string; ctaHref: string; status: string };
 const DEFAULT_STATUS = "All pipelines healthy";
 
 const PAGE_META: Record<string, PageMeta> = {
-  "/": { cta: "Talk to Khalid", ctaHref: "#contact", status: DEFAULT_STATUS },
-  "/about": { cta: "Book a demo", ctaHref: "#contact", status: DEFAULT_STATUS },
-  "/pricing": { cta: "Get a quote", ctaHref: "#contact", status: "Replies in < 24h" },
-  "/solutions": { cta: "Book a demo", ctaHref: "#contact", status: DEFAULT_STATUS },
-  "/contact": { cta: "Write us a note", ctaHref: "#letter", status: "Online · GMT+6" },
+  "/": { cta: "Talk to Khalid", ctaHref: "/contact", status: DEFAULT_STATUS },
+  "/about": { cta: "Book a demo", ctaHref: "/contact", status: DEFAULT_STATUS },
+  "/pricing": { cta: "Get a quote", ctaHref: "/contact", status: "Replies in < 24h" },
+  "/solutions": { cta: "Book a demo", ctaHref: "/contact", status: DEFAULT_STATUS },
+  "/contact": { cta: "Write us a note", ctaHref: "/contact#letter", status: "Online · GMT+6" },
   "/privacy": { cta: "Talk to Khalid", ctaHref: "/contact", status: "Reviewed quarterly" },
   "/terms": { cta: "Talk to Khalid", ctaHref: "/contact", status: "Reviewed quarterly" },
 };
@@ -23,10 +23,20 @@ export default function Header() {
 
   const isActive = (href: string) => pathname === href;
 
+  // Smooth-scroll to top when clicking a nav link to the current route
+  // (Next.js doesn't re-navigate, so default behavior is a hard jump.)
+  const sameRouteScroll =
+    (href: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (href === pathname) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
   return (
     <header className="topbar">
       <div className="container topbar-inner">
-        <Link href="/" className="brand">
+        <Link href="/" className="brand" onClick={sameRouteScroll("/")}>
           <span className="brand-mark">f</span>
           <span>Fastscraping</span>
         </Link>
@@ -35,6 +45,7 @@ export default function Header() {
             <Link
               href="/solutions"
               className={`nav-trigger${isActive("/solutions") ? " active" : ""}`}
+              onClick={sameRouteScroll("/solutions")}
             >
               Solutions <span className="caret">▾</span>
             </Link>
@@ -138,10 +149,18 @@ export default function Header() {
             Services
           </Link>
           <Link href={pathname === "/" ? "#industries" : "/#industries"}>Industries</Link>
-          <Link href="/pricing" className={isActive("/pricing") ? "active" : ""}>
+          <Link
+            href="/pricing"
+            className={isActive("/pricing") ? "active" : ""}
+            onClick={sameRouteScroll("/pricing")}
+          >
             Pricing
           </Link>
-          <Link href="/about" className={isActive("/about") ? "active" : ""}>
+          <Link
+            href="/about"
+            className={isActive("/about") ? "active" : ""}
+            onClick={sameRouteScroll("/about")}
+          >
             About
           </Link>
         </nav>
