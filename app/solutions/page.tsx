@@ -140,7 +140,7 @@ export default function SolutionsPage() {
                 <Link href="#contact" className="btn btn-accent">
                   Book a free consultation <span className="arrow">→</span>
                 </Link>
-                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Email Khalid
                 </a>
               </div>
@@ -248,7 +248,7 @@ export default function SolutionsPage() {
               </div>
               <div className="actions">
                 <a href="/contact" className="btn btn-accent">Book a demo</a>
-                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Email directly
                 </a>
               </div>

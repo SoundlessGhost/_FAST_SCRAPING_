@@ -14,7 +14,7 @@ export default function Footer() {
               Your web scraping team on demand. Structured data at scale — no Cloudflare, no captchas, no hassles.
             </p>
             <a
-              href="mailto:khalid@fastscraping.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
               className="email"
               target="_blank"
               rel="noopener noreferrer"

@@ -112,7 +112,7 @@ export default function TermsPage() {
               </ol>
               <div className="toc-foot">
                 <span>Need to negotiate?</span>
-                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
               </div>
             </nav>
 
@@ -432,7 +432,7 @@ export default function TermsPage() {
                 <dl>
                   <dt>Email</dt>
                   <dd>
-                    <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
                   </dd>
                   <dt>WhatsApp</dt>
                   <dd>+880 1XXX XXX XXX</dd>
@@ -461,7 +461,7 @@ export default function TermsPage() {
                   <Link href="/contact" className="btn btn-primary">
                     Send a brief <span className="arrow">→</span>
                   </Link>
-                  <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                     Email directly
                   </a>
                 </div>

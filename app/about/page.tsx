@@ -196,7 +196,7 @@ export default function AboutPage() {
                 <li>
                   <span className="fl-k">Reach</span>
                   <span className="fl-v">
-                    <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">khalid@fastscraping.com</a>
                   </span>
                 </li>
               </ul>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 <a href="https://upwork.com/freelancers/khalidalsaba" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                   Upwork profile
                 </a>
-                <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Contact Khalid
                   <span className="arrow">→</span>
                 </a>
@@ -276,7 +276,7 @@ export default function AboutPage() {
           <p className="team-foot">
             We work in small teams of high-leverage engineers — never armies of operators. Open
             seats:{" "}
-            <a href="mailto:khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank" rel="noopener noreferrer">
               we&apos;re hiring senior scraping engineers
             </a>
             .
