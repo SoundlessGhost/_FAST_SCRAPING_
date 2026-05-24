@@ -15,3 +15,11 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Megamenu card text: heading + description must stack vertically.
+   `.mm-h` and `.mm-d` are <span> elements — force block so they don't
+   render inline (which made text concatenate on one line). */
+.mm-h,
+.mm-d {
+  display: block;
+}

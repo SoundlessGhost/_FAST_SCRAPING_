@@ -309,7 +309,8 @@ export default function ContactPage() {
             <div className="tz-left">
               <span className="eyebrow">Where &amp; when</span>
               <h2 className="display" style={{ marginTop: 18 }}>
-                We&apos;re in Dhaka — <em>already working when you wake up.</em>
+                We&apos;re in Sirajganj, Ullapara —{" "}
+                <em>already working when you wake up.</em>
               </h2>
               <p>
                 The team is based in Bangladesh (GMT+6). That overlaps with EU

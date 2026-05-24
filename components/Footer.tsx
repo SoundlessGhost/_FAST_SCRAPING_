@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <div className="footer-base">
           <div>© 2026 Fastscraping · All rights reserved</div>
-          <div>Built for data teams · Operated from Dhaka &amp; the cloud</div>
+          <div>Built for data teams · Operated from Sirajganj, Ullapara &amp; the cloud</div>
         </div>
       </div>
     </footer>
