@@ -4,10 +4,25 @@ import "../styles/about.css";
 import "../styles/sol.css";
 import "../styles/sol-stack.css";
 
-export const metadata = {
-  title: "Solutions · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Solutions",
   description:
     "Six battle-tested data products — pricing intelligence, marketplace data, job market insights, LinkedIn data, web APIs, and ETL pipelines.",
+  alternates: { canonical: "/solutions" },
+  openGraph: {
+    title: "Solutions · Fastscraping",
+    description:
+      "Six data products: pricing intel, marketplace, jobs, LinkedIn, web APIs, ETL.",
+    url: "/solutions",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Solutions · Fastscraping",
+    description: "Six battle-tested data products.",
+  },
 };
 
 export default function SolutionsPage() {

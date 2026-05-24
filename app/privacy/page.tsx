@@ -3,10 +3,24 @@ import TocSpy from "@/components/TocSpy";
 import "../styles/about.css";
 import "../styles/legal.css";
 
-export const metadata = {
-  title: "Privacy policy · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy policy",
   description:
     "How Fastscraping collects, uses, and protects your information. GDPR and CCPA compliant.",
+  alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy policy · Fastscraping",
+    description: "GDPR and CCPA compliant. We never sell your data.",
+    url: "/privacy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy policy · Fastscraping",
+    description: "GDPR and CCPA compliant.",
+  },
 };
 
 export default function PrivacyPage() {

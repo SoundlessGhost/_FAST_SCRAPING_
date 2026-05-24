@@ -4,10 +4,25 @@ import LetterDate from "@/components/LetterDate";
 import "../styles/about.css";
 import "../styles/contact.css";
 
-export const metadata = {
-  title: "Contact · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
   description:
     "Tell us what you need scraped — sites, volume, cadence, delivery — and we'll send a tailored quote within 24 hours.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact · Fastscraping",
+    description:
+      "Quote within 24 hours. Free sample in 48–72 hours. No commitment.",
+    url: "/contact",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact · Fastscraping",
+    description: "Quote within 24 hours. Free sample in 48–72 hours.",
+  },
 };
 
 export default function ContactPage() {

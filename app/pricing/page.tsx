@@ -4,10 +4,25 @@ import Faq from "@/components/Faq";
 import "../styles/about.css";
 import "../styles/pricing.css";
 
-export const metadata = {
-  title: "Pricing · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing",
   description:
     "Custom pricing built around your data needs. Quote in < 24 hours, sample in 48–72 hours. No setup fees, month-to-month.",
+  alternates: { canonical: "/pricing" },
+  openGraph: {
+    title: "Pricing · Fastscraping",
+    description:
+      "Custom pricing. Quote in < 24 hours. Month-to-month. No setup fees.",
+    url: "/pricing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing · Fastscraping",
+    description: "Custom pricing. Quote in < 24 hours.",
+  },
 };
 
 export default function PricingPage() {

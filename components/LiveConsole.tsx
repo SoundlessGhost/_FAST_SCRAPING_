@@ -50,12 +50,11 @@ const mkRow = (seed: number): Row => {
 };
 
 export default function LiveConsole() {
-  const [rows, setRows] = useState<Row[]>(() =>
-    Array.from({ length: 7 }).map((_, i) => mkRow(i))
-  );
+  const [rows, setRows] = useState<Row[]>([]);
   const seedRef = useRef(7);
 
   useEffect(() => {
+    setRows(Array.from({ length: 7 }).map((_, i) => mkRow(i)));
     const id = setInterval(() => {
       setRows((prev) => {
         seedRef.current += 1;

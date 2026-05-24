@@ -2,10 +2,25 @@ import Link from "next/link";
 import AnimatedNumber from "@/components/AnimatedNumber";
 import "../styles/about.css";
 
-export const metadata = {
-  title: "About · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
   description:
     "Fastscraping is a fully managed web scraping service for data teams, AI companies, and enterprises. Founded 2023. Three engineers. 100M+ records / month.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About · Fastscraping",
+    description:
+      "Founded 2023. Three engineers. 100M+ records per month. Anti-bot bypass experts.",
+    url: "/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About · Fastscraping",
+    description: "Founded 2023. Three engineers. 100M+ records per month.",
+  },
 };
 
 export default function AboutPage() {

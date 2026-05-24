@@ -89,8 +89,9 @@ export default function BypassVisual() {
       {SHIELDS.map((s, i) => {
         const rad = (s.angle * Math.PI) / 180;
         const r = 150;
-        const x = 240 + r * Math.cos(rad);
-        const y = 230 + r * Math.sin(rad);
+        const round = (n: number) => Math.round(n * 100) / 100;
+        const x = round(240 + r * Math.cos(rad));
+        const y = round(230 + r * Math.sin(rad));
         return (
           <g key={s.name}>
             <line

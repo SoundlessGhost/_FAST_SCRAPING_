@@ -3,10 +3,24 @@ import TocSpy from "@/components/TocSpy";
 import "../styles/about.css";
 import "../styles/legal.css";
 
-export const metadata = {
-  title: "Terms of service · Fastscraping",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of service",
   description:
     "Fastscraping terms of service. You own what we deliver, we own how we build it, we both act in good faith.",
+  alternates: { canonical: "/terms" },
+  openGraph: {
+    title: "Terms of service · Fastscraping",
+    description: "Month-to-month. No lock-in. Cancel any time.",
+    url: "/terms",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of service · Fastscraping",
+    description: "Month-to-month. No lock-in.",
+  },
 };
 
 export default function TermsPage() {
