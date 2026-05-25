@@ -181,7 +181,10 @@ export default function PrivacyPage() {
               </ol>
               <div className="toc-foot">
                 <span>Have a question?</span>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
+                  target="_blank"
+                >
                   khalid@fastscraping.com
                 </a>
               </div>
@@ -463,7 +466,10 @@ export default function PrivacyPage() {
                 </ol>
                 <p>
                   To exercise any of these rights, email{" "}
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
+                    target="_blank"
+                  >
                     khalid@fastscraping.com
                   </a>
                   . We respond within 30 days, and usually much sooner.
@@ -500,7 +506,10 @@ export default function PrivacyPage() {
                 <p>
                   No system is perfectly secure. If you discover a
                   vulnerability, email{" "}
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
+                    target="_blank"
+                  >
                     khalid@fastscraping.com
                   </a>{" "}
                   and we&apos;ll respond within 24 hours.
@@ -560,7 +569,10 @@ export default function PrivacyPage() {
                 <dl>
                   <dt>Email</dt>
                   <dd>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com" target="_blank">
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
+                      target="_blank"
+                    >
                       khalid@fastscraping.com
                     </a>{" "}
                     — replies within 24 hours
@@ -596,7 +608,7 @@ export default function PrivacyPage() {
                   </p>
                 </div>
                 <div className="legal-foot-actions">
-                  <Link href="/contact" className="btn btn-primary">
+                  <Link href="/contact#letter" className="btn btn-primary">
                     Send us a note <span className="arrow">→</span>
                   </Link>
                   <a

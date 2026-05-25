@@ -74,19 +74,20 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Industries</h4>
             <ul>
-              <li><Link href="/#industries">E-commerce &amp; retail</Link></li>
-              <li><Link href="/#industries">Real estate</Link></li>
-              <li><Link href="/#industries">Talent &amp; recruitment</Link></li>
-              <li><Link href="/#industries">Ticketing &amp; events</Link></li>
-              <li><Link href="/#industries">Food delivery</Link></li>
-              <li><Link href="/#industries">AI &amp; machine learning</Link></li>
+              <li><Link href="/industries#i-retail">E-commerce &amp; retail</Link></li>
+              <li><Link href="/industries#i-realestate">Real estate</Link></li>
+              <li><Link href="/industries#i-talent">Talent &amp; recruitment</Link></li>
+              <li><Link href="/industries#i-ticketing">Ticketing &amp; events</Link></li>
+              <li><Link href="/industries#i-food">Food delivery</Link></li>
+              <li><Link href="/industries#i-ai">AI &amp; machine learning</Link></li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
               <li><Link href="/about">About</Link></li>
-              <li><Link href="/#clients">Case studies</Link></li>
+              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/case-studies">Case studies</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><a href="https://linkedin.com/in/md-khalid-mahmud-shawon" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><Link href="/privacy">Privacy</Link></li>
@@ -96,7 +97,7 @@ export default function Footer() {
         </div>
         <div className="footer-base">
           <div>© 2026 Fastscraping · All rights reserved</div>
-          <div>Built for data teams · Operated from Sirajganj, Ullapara &amp; the cloud</div>
+          <div>Built for data teams · Operated from Sirajganj, Ullapara, BD &amp; the cloud</div>
         </div>
       </div>
     </footer>

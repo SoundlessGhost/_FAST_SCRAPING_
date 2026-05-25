@@ -12,6 +12,9 @@ const PAGE_META: Record<string, PageMeta> = {
   "/about": { cta: "Book a demo", ctaHref: "/contact", status: DEFAULT_STATUS },
   "/pricing": { cta: "Get a quote", ctaHref: "/contact", status: "Replies in < 24h" },
   "/solutions": { cta: "Book a demo", ctaHref: "/contact", status: DEFAULT_STATUS },
+  "/services": { cta: "Get a quote", ctaHref: "/contact", status: "8 active capabilities" },
+  "/industries": { cta: "Talk to Khalid", ctaHref: "/contact", status: "6 verticals · 5 countries" },
+  "/case-studies": { cta: "Become a case", ctaHref: "/contact", status: "4 active stories" },
   "/contact": { cta: "Write us a note", ctaHref: "/contact#letter", status: "Online · GMT+6" },
   "/privacy": { cta: "Talk to Khalid", ctaHref: "/contact", status: "Reviewed quarterly" },
   "/terms": { cta: "Talk to Khalid", ctaHref: "/contact", status: "Reviewed quarterly" },
@@ -143,12 +146,19 @@ export default function Header() {
             </div>
           </div>
           <Link
-            href={pathname === "/" ? "#services" : "/#services"}
-            className={pathname === "/" ? "active" : ""}
+            href="/services"
+            className={isActive("/services") ? "active" : ""}
+            onClick={sameRouteScroll("/services")}
           >
             Services
           </Link>
-          <Link href={pathname === "/" ? "#industries" : "/#industries"}>Industries</Link>
+          <Link
+            href="/industries"
+            className={isActive("/industries") ? "active" : ""}
+            onClick={sameRouteScroll("/industries")}
+          >
+            Industries
+          </Link>
           <Link
             href="/pricing"
             className={isActive("/pricing") ? "active" : ""}

@@ -309,7 +309,7 @@ export default function ContactPage() {
             <div className="tz-left">
               <span className="eyebrow">Where &amp; when</span>
               <h2 className="display" style={{ marginTop: 18 }}>
-                We&apos;re in Sirajganj, Ullapara —{" "}
+                We&apos;re in Sirajganj, Ullapara, BD —{" "}
                 <em>already working when you wake up.</em>
               </h2>
               <p>
