@@ -566,7 +566,7 @@ export default function PrivacyPage() {
                     — replies within 24 hours
                   </dd>
                   <dt>WhatsApp</dt>
-                  <dd>+880 1XXX XXX XXX</dd>
+                  <dd>+880 1788 791 134</dd>
                   <dt>Mail</dt>
                   <dd>Fastscraping · Sirajganj, Rajshahi · Bangladesh</dd>
                 </dl>

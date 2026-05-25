@@ -32,3 +32,10 @@ html {
 .mm-card .mm-m {
   align-self: center;
 }
+
+/* Legal pages (privacy/terms): `.prose h3` from legal.css sets dark color,
+   which cascades into the dark `.legal-foot-card` and hides the heading.
+   Restore the card's paper color so the headline stays readable. */
+.prose .legal-foot-card h3 {
+  color: var(--paper);
+}
