@@ -61,7 +61,7 @@ export default function CaseStudiesGrid() {
                     <g transform="translate(250 320) rotate(-8)">
                       <rect x="-160" y="-110" width="320" height="220" rx="14" fill="#0e1311" stroke="rgba(122,209,154,0.5)" strokeWidth="1.5" />
                       <line x1="60" y1="-110" x2="60" y2="110" stroke="rgba(122,209,154,0.25)" strokeWidth="1" strokeDasharray="4 6" />
-                      <text x="-140" y="-72" fontFamily="Geist Mono" fontSize="10" letterSpacing="0.16em" fill="rgba(122,209,154,0.6)">
+                      <text x="-140" y="-76" fontFamily="Geist Mono" fontSize="10" letterSpacing="0.16em" fill="rgba(122,209,154,0.6)">
                         SECTION · STORY 01
                       </text>
                       <text x="-140" y="-42" fontFamily="Instrument Serif" fontSize="36" fill="#eaf2ed" fontStyle="italic">
@@ -73,19 +73,19 @@ export default function CaseStudiesGrid() {
                       <text x="-140" y="30" fontFamily="Instrument Serif" fontSize="36" fill="#7ad19a" fontStyle="italic">
                         pipeline.
                       </text>
-                      <text x="-140" y="70" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.14em" fill="rgba(245,243,238,0.5)">
+                      <text x="-142" y="70" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.14em" fill="rgba(245,243,238,0.5)">
                         FICSTAR × FASTSCRAPING · SINCE 2024
                       </text>
-                      <text x="86" y="-72" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.14em" fill="rgba(122,209,154,0.5)">
+                      <text x="86" y="-76" fontFamily="Geist Mono" fontSize="9" letterSpacing="0.14em" fill="rgba(122,209,154,0.5)">
                         N°
                       </text>
                       <text x="86" y="-32" fontFamily="Instrument Serif" fontSize="42" fill="#eaf2ed" fontStyle="italic">
                         01
                       </text>
-                      <text x="86" y="20" fontFamily="Geist Mono" fontSize="8" letterSpacing="0.12em" fill="rgba(245,243,238,0.4)">
+                      <text x="80" y="20" fontFamily="Geist Mono" fontSize="8" letterSpacing="0.12em" fill="rgba(245,243,238,0.4)">
                         USA · CA · EU
                       </text>
-                      <text x="86" y="40" fontFamily="Geist Mono" fontSize="8" letterSpacing="0.12em" fill="rgba(245,243,238,0.4)">
+                      <text x="80" y="40" fontFamily="Geist Mono" fontSize="8" letterSpacing="0.12em" fill="rgba(245,243,238,0.4)">
                         DAILY · 15M
                       </text>
                     </g>

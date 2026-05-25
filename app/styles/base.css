@@ -1299,7 +1299,7 @@ section.block { padding: 100px 0; }
 .cta-card .actions .btn { flex: 1; justify-content: center; padding: 12px; font-size: 14px; }
 
 /* ---------- Footer ---------- */
-footer {
+body > footer {
   border-top: 1px solid var(--hairline);
   margin-top: 80px;
   padding: 64px 0 36px;
