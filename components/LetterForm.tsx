@@ -13,6 +13,8 @@ const VOLUME_CHIPS = [
 const CADENCE_OPTS = ["Real-time", "Hourly", "Daily", "Weekly", "Monthly", "One-time"];
 const DELIVERY_OPTS = ["REST API", "Webhook", "S3 / GCS", "SFTP", "Snowflake", "CSV"];
 
+type Status = "idle" | "sending" | "sent" | "error";
+
 export default function LetterForm() {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -21,19 +23,58 @@ export default function LetterForm() {
   const [delivery, setDelivery] = useState("REST API");
   const [volume, setVolume] = useState("medium");
   const [message, setMessage] = useState("");
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
 
   const charCount = message.length;
   const maxChars = 1200;
-  const canSubmit = name.trim() && email.trim() && message.trim().length >= 20;
+  const canSubmit =
+    status !== "sending" &&
+    name.trim().length > 0 &&
+    email.trim().length > 0 &&
+    message.trim().length >= 20;
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!canSubmit) return;
-    setSent(true);
+
+    setStatus("sending");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim(),
+          company: company.trim(),
+          email: email.trim(),
+          cadence,
+          delivery,
+          volume,
+          message: message.trim(),
+        }),
+      });
+
+      const data = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        error?: string;
+      };
+
+      if (!res.ok || !data.ok) {
+        setErrorMsg(data.error || "Could not send your note. Try again.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("sent");
+    } catch {
+      setErrorMsg("Network error. Try again.");
+      setStatus("error");
+    }
   }
 
-  if (sent) {
+  if (status === "sent") {
     return (
       <div className="lt-sent">
         <div className="lt-sent-mark">✓</div>
@@ -64,7 +105,7 @@ export default function LetterForm() {
         <button
           className="btn btn-ghost"
           onClick={() => {
-            setSent(false);
+            setStatus("idle");
             setMessage("");
           }}
         >
@@ -179,6 +220,23 @@ export default function LetterForm() {
         </div>
       </div>
 
+      {status === "error" && errorMsg ? (
+        <div
+          role="alert"
+          style={{
+            margin: "12px 0 0",
+            padding: "10px 14px",
+            border: "1px solid rgba(214,87,48,0.4)",
+            background: "rgba(214,87,48,0.08)",
+            color: "var(--hot, #d65730)",
+            borderRadius: 8,
+            fontSize: 13.5,
+          }}
+        >
+          {errorMsg}
+        </div>
+      ) : null}
+
       <div className="lt-foot">
         <div className="lt-sig">
           <div className="lt-sig-mark">↵</div>
@@ -190,8 +248,14 @@ export default function LetterForm() {
           </div>
         </div>
         <div className="lt-submit">
-          <button type="submit" className="btn btn-primary" disabled={!canSubmit}>
-            Send note <span className="arrow">→</span>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            disabled={!canSubmit}
+            aria-busy={status === "sending"}
+          >
+            {status === "sending" ? "Sending…" : "Send note"}{" "}
+            <span className="arrow">→</span>
           </button>
         </div>
       </div>
