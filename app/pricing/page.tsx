@@ -2,9 +2,7 @@ import Link from "next/link";
 import PriceConfigurator from "@/components/PriceConfigurator";
 import Faq from "@/components/Faq";
 import KMAvatar from "@/components/KMAvatar";
-import "../styles/about.css";
-import "../styles/pricing.css";
-
+import "../styles/about.css";import "../styles/pricing.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

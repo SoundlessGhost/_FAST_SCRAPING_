@@ -1,10 +1,7 @@
 import Link from "next/link";
 import SolutionsStack from "@/components/SolutionsStack";
 import KMAvatar from "@/components/KMAvatar";
-import "../styles/about.css";
-import "../styles/sol.css";
-import "../styles/sol-stack.css";
-
+import "../styles/about.css";import "../styles/sol.css";import "../styles/sol-stack.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

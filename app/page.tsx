@@ -3,6 +3,7 @@ import LiveConsole from "@/components/LiveConsole";
 import BypassVisual from "@/components/BypassVisual";
 import AnimatedNumber from "@/components/AnimatedNumber";
 import KMAvatar from "@/components/KMAvatar";
+import "./styles/home-responsive.css";
 
 export default function HomePage() {
   return (

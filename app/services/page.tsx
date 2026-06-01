@@ -1,9 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import KMAvatar from "@/components/KMAvatar";
-import "../styles/about.css";
-import "../styles/services.css";
-
+import "../styles/about.css";import "../styles/services.css";
 export const metadata: Metadata = {
   title: "Services",
   description:

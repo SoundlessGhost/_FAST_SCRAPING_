@@ -2,9 +2,7 @@ import Image from "next/image";
 import LetterForm from "@/components/LetterForm";
 import TimezoneClocks from "@/components/TimezoneClocks";
 import LetterDate from "@/components/LetterDate";
-import "../styles/about.css";
-import "../styles/contact.css";
-
+import "../styles/about.css";import "../styles/contact.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

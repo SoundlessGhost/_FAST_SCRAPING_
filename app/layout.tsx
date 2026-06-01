@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./styles/base.css";
 import "./globals.css";
+import "./styles/nav-mobile.css";
 
 const SITE_URL = "https://fastscraping.com";
 

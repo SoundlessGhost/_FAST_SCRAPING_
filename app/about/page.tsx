@@ -3,7 +3,6 @@ import Image from "next/image";
 import AnimatedNumber from "@/components/AnimatedNumber";
 import KMAvatar from "@/components/KMAvatar";
 import "../styles/about.css";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

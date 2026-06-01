@@ -2,9 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import CaseStudiesGrid from "@/components/CaseStudiesGrid";
 import KMAvatar from "@/components/KMAvatar";
-import "../styles/about.css";
-import "../styles/cases.css";
-
+import "../styles/about.css";import "../styles/cases.css";
 export const metadata: Metadata = {
   title: "Case studies",
   description:

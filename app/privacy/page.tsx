@@ -1,8 +1,6 @@
 import Link from "next/link";
 import TocSpy from "@/components/TocSpy";
-import "../styles/about.css";
-import "../styles/legal.css";
-
+import "../styles/about.css";import "../styles/legal.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
