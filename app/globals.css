@@ -39,3 +39,12 @@ html {
 .prose .legal-foot-card h3 {
   color: var(--paper);
 }
+
+/* Header "Dashboard" link — client access, set apart from the marketing nav */
+.nav a.nav-dash {
+  color: var(--accent);
+}
+.nav a.nav-dash::before {
+  content: "→ ";
+  opacity: 0.6;
+}

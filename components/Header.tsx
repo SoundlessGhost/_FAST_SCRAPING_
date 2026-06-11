@@ -28,6 +28,7 @@ const NAV = [
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/case-studies", label: "Case studies" },
+  { href: "/dashboard", label: "Client dashboard" },
 ];
 
 const SOLUTIONS_SUB = [
@@ -77,6 +78,8 @@ export default function Header() {
     },
     [],
   );
+
+  if (pathname?.startsWith("/dashboard")) return null;
 
   return (
     <>
@@ -217,6 +220,12 @@ export default function Header() {
               onClick={sameRouteScroll("/about")}
             >
               About
+            </Link>
+            <Link
+              href="/dashboard"
+              className={`nav-dash${isActive("/dashboard") ? " active" : ""}`}
+            >
+              Dashboard
             </Link>
           </nav>
 
