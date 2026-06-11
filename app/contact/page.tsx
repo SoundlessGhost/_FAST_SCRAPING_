@@ -131,6 +131,7 @@ export default function ContactPage() {
               <a
                 href="https://wa.me/8801788791134"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="dl-row dl-row--wa"
               >
                 <span className="dl-ic">
@@ -165,7 +166,7 @@ export default function ContactPage() {
                 <span className="dl-row-arr">→</span>
               </a>
 
-              <a href="#" className="dl-row dl-row--call">
+              <a href="#letter" className="dl-row dl-row--call">
                 <span className="dl-ic">
                   <svg
                     viewBox="0 0 24 24"

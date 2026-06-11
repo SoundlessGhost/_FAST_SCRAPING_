@@ -86,6 +86,7 @@ export default function PrivacyPage() {
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                   style={{ color: "var(--accent)" }}
                 >
                   khalid@fastscraping.com
@@ -182,6 +183,7 @@ export default function PrivacyPage() {
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   khalid@fastscraping.com
                 </a>
@@ -467,6 +469,7 @@ export default function PrivacyPage() {
                   <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                     target="_blank"
+                  rel="noopener noreferrer"
                   >
                     khalid@fastscraping.com
                   </a>
@@ -507,6 +510,7 @@ export default function PrivacyPage() {
                   <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                     target="_blank"
+                  rel="noopener noreferrer"
                   >
                     khalid@fastscraping.com
                   </a>{" "}
@@ -570,6 +574,7 @@ export default function PrivacyPage() {
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                       target="_blank"
+                  rel="noopener noreferrer"
                     >
                       khalid@fastscraping.com
                     </a>{" "}
@@ -612,6 +617,7 @@ export default function PrivacyPage() {
                   <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=khalid@fastscraping.com"
                     target="_blank"
+                  rel="noopener noreferrer"
                     className="btn btn-ghost"
                   >
                     Email directly

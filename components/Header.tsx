@@ -98,7 +98,7 @@ export default function Header() {
                 className={`nav-trigger${isActive("/solutions") ? " active" : ""}`}
                 onClick={sameRouteScroll("/solutions")}
               >
-                Solutions <span className="caret">▾</span>
+                Solutions
               </Link>
               <div className="megamenu">
                 <div className="mm-head">
@@ -230,10 +230,6 @@ export default function Header() {
           </nav>
 
           <div className="topbar-right">
-            <span className="status-pill">
-              <span className="status-dot"></span>
-              <span>{meta.status}</span>
-            </span>
             <Link href={meta.ctaHref} className="btn btn-primary">
               {meta.cta}
               <span className="arrow">→</span>
@@ -305,10 +301,6 @@ export default function Header() {
           </div>
 
           <div className="md-foot">
-            <span className="md-status">
-              <span className="md-status-dot"></span>
-              {meta.status}
-            </span>
             <Link
               href={meta.ctaHref}
               className="btn btn-primary md-cta"

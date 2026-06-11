@@ -137,9 +137,9 @@ export default function HomePage() {
             { name: "Walmart", tick: "e-com" },
             { name: "Glassdoor", tick: "jobs" },
           ].map((c, i) => (
-            <a key={i} className="platform-chip">
+            <span key={i} className="platform-chip">
               {c.name} <span className="tick">{c.tick}</span>
-            </a>
+            </span>
           ))}
         </div>
       </section>
@@ -177,9 +177,9 @@ export default function HomePage() {
                   <span>deploy</span>
                   <span>monitor</span>
                 </div>
-                <a href="#">
+                <Link href="/services#s-managed">
                   Learn more <span className="arr">→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -198,9 +198,9 @@ export default function HomePage() {
                   <span>dedup</span>
                   <span>archive</span>
                 </div>
-                <a href="#">
+                <Link href="/services#s-crawling">
                   Learn more <span className="arr">→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -217,9 +217,9 @@ export default function HomePage() {
                   <span>Android</span>
                   <span>protocol</span>
                 </div>
-                <a href="#">
+                <Link href="/services#s-mobile">
                   Learn more <span className="arr">→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -245,9 +245,6 @@ export default function HomePage() {
                       <span>SLA 99.9%</span>
                       <span>OpenAPI</span>
                     </div>
-                    <a href="#">
-                      See API docs <span className="arr">→</span>
-                    </a>
                   </div>
                 </div>
                 <div className="visual">
@@ -310,9 +307,9 @@ export default function HomePage() {
                   <span>SFTP</span>
                   <span>Webhook</span>
                 </div>
-                <a href="#">
+                <Link href="/services#s-etl">
                   Learn more <span className="arr">→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -331,9 +328,9 @@ export default function HomePage() {
                   <span>jobs</span>
                   <span>refresh: daily</span>
                 </div>
-                <a href="#">
+                <Link href="/services#s-linkedin">
                   Learn more <span className="arr">→</span>
-                </a>
+                </Link>
               </div>
             </article>
           </div>

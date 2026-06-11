@@ -279,9 +279,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Coverage</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -351,9 +348,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Account bans</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -421,9 +415,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Boards aggregated</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -482,9 +473,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Events daily</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -562,9 +550,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Margin recovered · year 1</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -622,9 +607,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Parquet on S3</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
 
@@ -700,9 +682,6 @@ export default function CaseStudiesGrid() {
                     <span className="l">Field-level QA pass</span>
                   </div>
                 </div>
-                <a href="#" className="cs-card-cta">
-                  Read the case → <span className="arr">→</span>
-                </a>
               </div>
             </article>
           </div>
