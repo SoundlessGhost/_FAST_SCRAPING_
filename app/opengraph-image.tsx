@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 export const alt = "Fastscraping — Your web scraping team on demand";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -51,6 +51,9 @@ export default async function Image() {
         >
           <div
             style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "baseline",
               fontSize: 88,
               color: "#131613",
               lineHeight: 1.05,
@@ -58,7 +61,9 @@ export default async function Image() {
               maxWidth: 1000,
             }}
           >
-            We handle your <span style={{ fontStyle: "italic", color: "#0e5d44" }}>web scraping</span> pipeline.
+            <span>We handle your&nbsp;</span>
+            <span style={{ fontStyle: "italic", color: "#0e5d44" }}>web scraping&nbsp;</span>
+            <span>pipeline.</span>
           </div>
           <div
             style={{
