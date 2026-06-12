@@ -393,6 +393,7 @@ h1, h2, h3, h4 { margin: 0; }
   align-items: start;
 }
 .hero-left { padding-top: 24px; }
+.hero-right { padding-top: 24px; }
 .hero-tag {
   display: inline-flex;
   align-items: center;

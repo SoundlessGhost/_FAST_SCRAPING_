@@ -347,6 +347,35 @@ export default function UsageDashboard() {
                     </g>
                   );
                 })}
+                {days.length > 1 ? (
+                  <g>
+                    <polyline
+                      points={days
+                        .map(
+                          (d, i) =>
+                            `${PADL + colW * (i + 0.5)},${yOf(shown.reduce((s, c) => s + (d[c] ?? 0), 0))}`,
+                        )
+                        .join(" ")}
+                      fill="none"
+                      stroke="#131613"
+                      strokeWidth="1.4"
+                      strokeDasharray="4 3"
+                      opacity="0.5"
+                    />
+                    {days.map((d, i) => (
+                      <circle
+                        key={d.date}
+                        cx={PADL + colW * (i + 0.5)}
+                        cy={yOf(shown.reduce((s, c) => s + (d[c] ?? 0), 0))}
+                        r="2.4"
+                        fill="var(--card)"
+                        stroke="#131613"
+                        strokeWidth="1.2"
+                        opacity="0.6"
+                      />
+                    ))}
+                  </g>
+                ) : null}
               </svg>
             </div>
           </div>
