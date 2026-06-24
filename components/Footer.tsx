@@ -2,16 +2,23 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { MouseEvent } from "react";
 
 export default function Footer() {
   const pathname = usePathname();
   if (pathname?.startsWith("/dashboard")) return null;
+  const scrollTopIfHome = (e: MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
     <footer>
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link href="/" className="brand">
+            <Link href="/" className="brand" onClick={scrollTopIfHome}>
               <span className="brand-mark">f</span>
               <span>Fastscraping</span>
             </Link>
