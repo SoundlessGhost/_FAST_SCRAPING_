@@ -226,6 +226,176 @@ export const POSTS: Post[] = [
       </>
     ),
   },
+  {
+    slug: "marketplace-pricing-intelligence",
+    title: "Marketplace & pricing intelligence across Amazon, eBay and Shopee",
+    description:
+      "Track price, stock, reviews and buy-box across marketplaces — what's straightforward, what's region-locked, and how to turn it into repricing and brand-protection signals.",
+    date: "2026-05-29",
+    readMins: 6,
+    tag: "Marketplace",
+    body: (
+      <>
+        <p>
+          &quot;Marketplace intelligence&quot; sounds like one thing. In practice it&apos;s
+          a different engineering problem on every platform — Amazon is not eBay is not
+          Shopee. Here&apos;s what tracking products across marketplaces actually involves.
+        </p>
+
+        <h2>What you can track</h2>
+        <ul>
+          <li><strong>Price</strong> — list price, sale price, per-variant, per-seller.</li>
+          <li><strong>Availability</strong> — in stock, low stock, seller count.</li>
+          <li><strong>Position</strong> — buy-box owner, search rank, category placement.</li>
+          <li><strong>Signals</strong> — ratings, review counts, new-review velocity.</li>
+        </ul>
+
+        <h2>The hard parts</h2>
+        <ul>
+          <li>
+            <strong>Anti-bot differs per marketplace.</strong> Amazon, eBay and Walmart each
+            defend differently; what works on one rarely ports cleanly to another.
+          </li>
+          <li>
+            <strong>Region matters.</strong> Some marketplaces are open in one country and
+            heavily fortified in another. On Shopee, for example, several regions extract
+            cleanly today while a few remain partial — so we&apos;re honest about which
+            regions we can guarantee.
+          </li>
+          <li>
+            <strong>Variants &amp; identity.</strong> Matching the same product across
+            sellers and marketplaces (dedup, variant rollup) is often harder than fetching
+            the page.
+          </li>
+        </ul>
+
+        <h2>What clients build on it</h2>
+        <ul>
+          <li>Dynamic repricing engines that react to undercuts within minutes.</li>
+          <li>Brand-protection dashboards (MAP violations, unauthorized sellers).</li>
+          <li>Assortment and gap analysis across competitors.</li>
+        </ul>
+
+        <p>
+          We&apos;ll tell you up front which marketplaces and regions we can cover reliably,
+          prove it with a sample, and scope the rest honestly rather than promising blanket
+          coverage.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "jobs-talent-and-ai-training-data",
+    title: "From job boards to LLM corpora: structured data for talent analytics and AI",
+    description:
+      "Two ends of the web-data spectrum — hiring and compensation data from dozens of job boards, and clean, licensed training corpora for AI. How each is built and delivered.",
+    date: "2026-05-22",
+    readMins: 6,
+    tag: "Data products",
+    body: (
+      <>
+        <p>
+          Talent data and AI training data sit at opposite ends of the web-data spectrum —
+          one is small, structured and high-precision; the other is massive, messy and
+          provenance-sensitive. We build both. Here&apos;s how they differ.
+        </p>
+
+        <h2>Jobs &amp; talent data</h2>
+        <p>
+          Aggregating hiring data across many boards — Indeed, LinkedIn Jobs, Glassdoor,
+          StepStone and regional players — sounds like a scraping job. The real work is
+          afterward:
+        </p>
+        <ul>
+          <li><strong>Deduplication</strong> — the same role is posted on five boards.</li>
+          <li><strong>Normalization</strong> — titles, locations, seniority and salary into one schema.</li>
+          <li><strong>Comp benchmarking</strong> — percentile bands by role and region, refreshed continuously.</li>
+        </ul>
+        <p>Clients use it for wage analytics, skill-demand forecasting, and sourcing tools.</p>
+
+        <h2>AI training corpora</h2>
+        <p>
+          Training data is a volume-and-cleanliness problem, plus a provenance one. Building
+          a usable corpus means:
+        </p>
+        <ul>
+          <li><strong>Crawl &amp; clean</strong> — boilerplate stripping, language detection, dedup (minhash / simhash).</li>
+          <li><strong>Provenance</strong> — per-document source URL and fetch timestamp, kept with the data.</li>
+          <li><strong>Licensing awareness</strong> — license flags, robots/ToS respect, and takedown handling.</li>
+          <li><strong>Delivery</strong> — Parquet on S3 with a documented schema, not a pile of HTML.</li>
+        </ul>
+
+        <p>
+          Different shapes, same discipline: clean inputs, validated outputs, and honesty
+          about what the data is and isn&apos;t.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "is-web-scraping-legal",
+    title: "Is web scraping legal? A practical, non-lawyer overview",
+    description:
+      "Public data, terms of service, copyright, personal data and robots.txt — a plain-English map of the web-scraping legal landscape. Not legal advice.",
+    date: "2026-05-15",
+    readMins: 7,
+    tag: "Legal",
+    body: (
+      <>
+        <p>
+          <strong>First, the disclaimer:</strong> this is not legal advice, we&apos;re not
+          lawyers, and the law varies by country and changes over time. For anything that
+          matters, talk to counsel. With that said, here&apos;s a practical map of the
+          questions that actually come up.
+        </p>
+
+        <h2>The questions that matter</h2>
+        <ul>
+          <li>
+            <strong>Public vs private data.</strong> Scraping data that&apos;s publicly
+            visible without logging in sits on very different footing than data behind an
+            account or paywall.
+          </li>
+          <li>
+            <strong>Terms of service.</strong> Many sites prohibit scraping in their ToS.
+            Whether that&apos;s enforceable depends on jurisdiction and how the terms were
+            agreed — but it&apos;s a real factor.
+          </li>
+          <li>
+            <strong>Copyright.</strong> Facts aren&apos;t copyrightable; creative content
+            (article text, photos) is. How you use what you collect matters as much as
+            collecting it.
+          </li>
+          <li>
+            <strong>Personal data.</strong> GDPR, CCPA and similar regimes apply when the
+            data is about identifiable people — regardless of whether it&apos;s public.
+          </li>
+          <li>
+            <strong>Computer-misuse laws.</strong> Circumventing access controls or
+            degrading a service can cross lines that simple reading of public pages does
+            not.
+          </li>
+        </ul>
+
+        <h2>How responsible scraping lowers risk</h2>
+        <ul>
+          <li>Prefer public data; don&apos;t break authentication to reach private data.</li>
+          <li>Respect robots.txt and rate limits; don&apos;t degrade the target.</li>
+          <li>Honor data-subject rights and takedown requests for personal data.</li>
+          <li>Keep provenance so you can answer where any record came from.</li>
+        </ul>
+
+        <h2>The bottom line</h2>
+        <p>
+          Web scraping is not inherently illegal — but &quot;it&apos;s public&quot; is not a
+          blanket defense either. The risk depends on what you collect, how you collect it,
+          and what you do with it. We operate conservatively, decline work we shouldn&apos;t
+          do, and tell clients honestly when a target raises flags worth a lawyer&apos;s
+          look.
+        </p>
+      </>
+    ),
+  },
 ];
 
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
