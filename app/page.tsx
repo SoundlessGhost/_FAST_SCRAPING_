@@ -17,7 +17,7 @@ export default function HomePage() {
               <span>Enterprise-grade data extraction</span>
             </div>
             <h1 className="display">
-              We handle your
+              We handle your{" "}
               <span className="br">
                 <em>web scraping</em> pipeline.
               </span>

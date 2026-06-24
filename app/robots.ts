@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/dashboard"],
       },
     ],
-    sitemap: "https://fastscraping.com/sitemap.xml",
-    host: "https://fastscraping.com",
+    sitemap: "https://www.fastscraping.com/sitemap.xml",
+    host: "https://www.fastscraping.com",
   };
 }

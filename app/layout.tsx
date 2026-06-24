@@ -6,7 +6,7 @@ import "./styles/base.css";
 import "./globals.css";
 import "./styles/nav-mobile.css";
 
-const SITE_URL = "https://fastscraping.com";
+const SITE_URL = "https://www.fastscraping.com";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     template: "%s · Fastscraping",
   },
   description:
-    "Enterprise-grade data extraction. Structured data delivered reliably at any scale — bypassing Cloudflare, DataDome, PerimeterX and login walls. No proxies, no infrastructure, no babysitting.",
+    "Managed web scraping service. We build, run and maintain data pipelines that bypass Cloudflare, DataDome, PerimeterX and login walls — clean structured data delivered to your API, warehouse or S3.",
   applicationName: "Fastscraping",
   authors: [{ name: "Md Khalid Mahmud Shawon", url: SITE_URL }],
   creator: "Md Khalid Mahmud Shawon",

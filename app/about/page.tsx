@@ -573,7 +573,7 @@ export default function AboutPage() {
                   <span>Fastscraping</span>
                 </div>
                 <a
-                  href="https://fastscraping.com"
+                  href="https://www.fastscraping.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bc-url"
