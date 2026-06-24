@@ -93,6 +93,7 @@ export default function Footer() {
               <li><Link href="/about">About</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/case-studies">Case studies</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><a href="https://linkedin.com/in/md-khalid-mahmud-shawon" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><Link href="/privacy">Privacy</Link></li>

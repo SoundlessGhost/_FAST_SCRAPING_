@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { POSTS } from "@/lib/blog/posts";
 
 const SITE = "https://www.fastscraping.com";
 
@@ -17,13 +18,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/pricing", priority: 0.9, changeFrequency: "monthly" },
     { path: "/about", priority: 0.7, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
     { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
   ];
-  return routes.map((r) => ({
+  const staticRoutes = routes.map((r) => ({
     url: `${SITE}${r.path}`,
     lastModified: now,
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
+  const postRoutes = POSTS.map((p) => ({
+    url: `${SITE}/blog/${p.slug}`,
+    lastModified: new Date(`${p.date}T00:00:00Z`),
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+  return [...staticRoutes, ...postRoutes];
 }
